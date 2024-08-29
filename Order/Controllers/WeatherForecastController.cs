@@ -24,7 +24,7 @@ namespace Order.Controllers
 
 		[HttpGet(Name = "GetWeatherForecast")]
 		public async Task<IEnumerable<WeatherForecast>> Get()
-		{			
+		{
 			await _bus.Publish(new CreatedOrder());
 			return Enumerable.Range(1, 5).Select(index => new WeatherForecast
 			{

@@ -11,3 +11,5 @@
 /Order/obj
 /Product/bin/Debug/net6.0
 /Product/obj
+.vscode/launch.json
+microservices.generated.sln
